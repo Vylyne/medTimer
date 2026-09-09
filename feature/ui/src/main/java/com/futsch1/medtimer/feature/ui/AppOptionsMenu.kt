@@ -46,6 +46,7 @@ fun AppOptionsMenu(
     onClearEvents: () -> Unit,
     onExportEvents: (isCSV: Boolean) -> Unit,
     onExportMedicines: (isCSV: Boolean) -> Unit,
+    onExportStock: () -> Unit,
     onOpenAppUrl: () -> Unit,
 ) {
     var expanded by remember { mutableStateOf(false) }
@@ -93,6 +94,7 @@ fun AppOptionsMenu(
             MenuSectionLabel(CoreUiR.string.medicine_data)
             item(CoreUiR.string.export_pdf, CoreUiR.drawable.filetype_pdf, CoreUiR.string.export_medicines_pdf) { onExportMedicines(false) }
             item(CoreUiR.string.export_csv, CoreUiR.drawable.filetype_csv, CoreUiR.string.export_medicines_csv) { onExportMedicines(true) }
+            item(CoreUiR.string.export_stock_report, CoreUiR.drawable.filetype_csv, CoreUiR.string.export_stock_report_csv, onExportStock)
 
             HorizontalDivider()
             item(CoreUiR.string.automatic_backup, CoreUiR.drawable.gear, onClick = actions::configureAutomaticBackup)
@@ -124,7 +126,7 @@ fun AppOptionsMenu(
 
 /**
  * [descriptionRes] overrides the spoken name for the entries whose label alone does not say what they
- * act on - the two "Export as ..." pairs, one under each data section.
+ * act on - the two "Export as ..." pairs, one under each data section, and the stock report.
  */
 @Composable
 private fun MenuItem(labelRes: Int, iconRes: Int?, descriptionRes: Int?, onClick: () -> Unit) {

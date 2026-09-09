@@ -13,6 +13,7 @@ import com.futsch1.medtimer.core.ui.R
 import com.futsch1.medtimer.feature.reminders.api.command.ReminderCommandBus
 import com.futsch1.medtimer.feature.ui.exporters.CSVEventExport
 import com.futsch1.medtimer.feature.ui.exporters.CSVMedicineExport
+import com.futsch1.medtimer.feature.ui.exporters.CSVStockExport
 import com.futsch1.medtimer.feature.ui.exporters.Export
 import com.futsch1.medtimer.feature.ui.exporters.Export.ExporterException
 import com.futsch1.medtimer.feature.ui.exporters.ExportBackupPath.getExportFilename
@@ -25,7 +26,7 @@ import kotlinx.coroutines.launch
 import java.io.File
 import javax.inject.Inject
 
-/** Backs the shared options menu: event/medicine export and clearing the event log. */
+/** Backs the shared options menu: event/medicine/stock export and clearing the event log. */
 @HiltViewModel
 class AppOptionsViewModel @Inject constructor(
     @param:ApplicationContext private val context: Context,
@@ -35,6 +36,7 @@ class AppOptionsViewModel @Inject constructor(
     private val csvMedicineExportFactory: CSVMedicineExport.Factory,
     private val pdfEventExportFactory: PDFEventExport.Factory,
     private val csvEventExportFactory: CSVEventExport.Factory,
+    private val csvStockExportFactory: CSVStockExport.Factory,
     private val commandBus: ReminderCommandBus,
     @param:ApplicationScope private val applicationScope: CoroutineScope,
 ) : ViewModel() {
@@ -65,6 +67,14 @@ class AppOptionsViewModel @Inject constructor(
                 if (isCSV) csvMedicineExportFactory.create(medicines, fragmentManager)
                 else pdfMedicineExportFactory.create(medicines, fragmentManager)
             )
+        }
+    }
+
+    fun exportStock(tagFilter: TagFilterViewModel, fragmentManager: FragmentManager) {
+        viewModelScope.launch {
+            warnIfFiltered(tagFilter)
+            val medicines = tagFilter.filterMedicines(medicineRepository.getAll())
+            export(csvStockExportFactory.create(medicines, fragmentManager))
         }
     }
 

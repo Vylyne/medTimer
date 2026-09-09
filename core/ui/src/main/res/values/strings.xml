@@ -268,6 +268,8 @@
     <string name="big_notifications">Big notification buttons</string>
     <string name="reminded">Reminded</string>
     <string name="estimated_run_out_date">Estimated run out date</string>
+    <string name="export_stock_report">Export stock report (CSV)</string>
+    <string name="export_stock_report_csv">Export stock report as CSV</string>
     <string name="create_calendar_entry">Create calendar entry</string>
     <string name="notes">Notes</string>
     <string name="automatically_taken">Automatically mark as taken</string>

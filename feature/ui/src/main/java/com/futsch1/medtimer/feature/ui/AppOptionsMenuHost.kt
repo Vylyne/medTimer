@@ -64,6 +64,9 @@ fun RowScope.AppOptionsMenuHost(
         onExportMedicines = { isCSV ->
             optionsViewModel.exportMedicines(isCSV, tagFilterViewModel, fragment.parentFragmentManager)
         },
+        onExportStock = {
+            optionsViewModel.exportStock(tagFilterViewModel, fragment.parentFragmentManager)
+        },
     ) {
         safeStartActivity(context, Intent(Intent.ACTION_VIEW, APP_URL.toUri()))
     }
