@@ -352,4 +352,6 @@
     <string name="more_options" tools:ignore="MissingTranslation">Více možností</string>
     <string name="close" tools:ignore="MissingTranslation">Zavřít</string>
     <string name="navigate_up" tools:ignore="MissingTranslation">Navigovat nahoru</string>
+    <string name="export_stock_report">Exportovat přehled zásob (CSV)</string>
+    <string name="export_stock_report_csv">Exportovat přehled zásob jako CSV</string>
 </resources>

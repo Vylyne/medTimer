@@ -334,4 +334,6 @@
     <string name="navigate_up" tools:ignore="MissingTranslation">向上瀏覽</string>
     <string name="close" tools:ignore="MissingTranslation">關閉</string>
     <string name="more_options" tools:ignore="MissingTranslation">更多選項</string>
+    <string name="export_stock_report">匯出庫存報告 (CSV)</string>
+    <string name="export_stock_report_csv">將庫存報告匯出為 CSV</string>
 </resources>

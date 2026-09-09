@@ -122,7 +122,8 @@ class CSVStockExport @AssistedInject constructor(
     private suspend fun dosage(medicine: Medicine): String =
         medicine.reminders
             .filterNot { it.isOutOfStockOrExpirationReminder }
-            .joinToString(DOSAGE_SEPARATOR) { reminder ->
+            // map is inline and joinToString is not, so the suspending summary call happens here.
+            .map { reminder ->
                 val amount = if (reminder.variableAmount) {
                     context.getString(R.string.variable_amount)
                 } else {
@@ -130,6 +131,7 @@ class CSVStockExport @AssistedInject constructor(
                 }
                 "$amount @ ${reminderSummaryFormatter.formatExportReminderSummary(reminder)}"
             }
+            .joinToString(DOSAGE_SEPARATOR)
 
     override val extension = "csv"
     override val type = "Stock"

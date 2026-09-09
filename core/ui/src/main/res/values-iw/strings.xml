@@ -343,4 +343,6 @@
     <string name="next_week">שבוע הבא</string>
     <string name="stock_after_simulation_end">אחרי %s</string>
     <string name="move_medicine">הזז תרופה</string>
+    <string name="export_stock_report">ייצוא דוח מלאי (CSV)</string>
+    <string name="export_stock_report_csv">ייצוא דוח מלאי כקובץ CSV</string>
 </resources>

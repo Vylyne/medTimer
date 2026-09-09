@@ -337,4 +337,6 @@
     <string name="next_week">Επόμενη εβδομάδα</string>
     <string name="stock_after_simulation_end">Μετά τις %s</string>
     <string name="move_medicine">Μετακίνηση φαρμάκου</string>
+    <string name="export_stock_report">Εξαγωγή αναφοράς αποθέματος (CSV)</string>
+    <string name="export_stock_report_csv">Εξαγωγή αναφοράς αποθέματος ως CSV</string>
 </resources>

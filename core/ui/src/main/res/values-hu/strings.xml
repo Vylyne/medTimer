@@ -337,4 +337,6 @@
     <string name="next_week">Következő hét</string>
     <string name="stock_after_simulation_end">%s után</string>
     <string name="move_medicine">Gyógyszer áthelyezése</string>
+    <string name="export_stock_report">Készletjelentés exportálása (CSV)</string>
+    <string name="export_stock_report_csv">Készletjelentés exportálása CSV-ként</string>
 </resources>

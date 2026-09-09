@@ -337,4 +337,6 @@
     <string name="next_week">Næste uge</string>
     <string name="stock_after_simulation_end">Efter %s</string>
     <string name="move_medicine">Flyt medicin</string>
+    <string name="export_stock_report">Eksportér lagerrapport (CSV)</string>
+    <string name="export_stock_report_csv">Eksportér lagerrapport som CSV</string>
 </resources>

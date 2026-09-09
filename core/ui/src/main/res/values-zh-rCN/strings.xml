@@ -331,4 +331,6 @@
     <string name="next_week">下一周</string>
     <string name="stock_after_simulation_end">在 %s 之后</string>
     <string name="move_medicine">移动药物</string>
+    <string name="export_stock_report">导出库存报告 (CSV)</string>
+    <string name="export_stock_report_csv">将库存报告导出为 CSV</string>
 </resources>

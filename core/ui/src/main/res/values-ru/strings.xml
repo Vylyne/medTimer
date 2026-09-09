@@ -345,4 +345,6 @@
     <string name="next_week">Следующая неделя</string>
     <string name="stock_after_simulation_end">После %s</string>
     <string name="move_medicine">Переместить лекарство</string>
+    <string name="export_stock_report">Экспорт отчёта о запасах (CSV)</string>
+    <string name="export_stock_report_csv">Экспортировать отчёт о запасах в формате CSV</string>
 </resources>

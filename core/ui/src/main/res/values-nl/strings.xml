@@ -337,4 +337,6 @@
     <string name="next_week">Volgende week</string>
     <string name="stock_after_simulation_end">Na %s</string>
     <string name="move_medicine">Medicijn verplaatsen</string>
+    <string name="export_stock_report">Voorraadrapport exporteren (CSV)</string>
+    <string name="export_stock_report_csv">Voorraadrapport exporteren als CSV</string>
 </resources>

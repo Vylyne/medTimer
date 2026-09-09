@@ -340,4 +340,6 @@
     <string name="navigate_up" tools:ignore="MissingTranslation">Yukarı git</string>
     <string name="close" tools:ignore="MissingTranslation">Kapat</string>
     <string name="more_options" tools:ignore="MissingTranslation">Daha fazla seçenek</string>
+    <string name="export_stock_report">Stok raporunu dışa aktar (CSV)</string>
+    <string name="export_stock_report_csv">Stok raporunu CSV olarak dışa aktar</string>
 </resources>

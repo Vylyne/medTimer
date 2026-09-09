@@ -364,4 +364,6 @@
     <string name="navigate_up" tools:ignore="MissingTranslation">تنقل فوق</string>
     <string name="close" tools:ignore="MissingTranslation">أغلِق</string>
     <string name="more_options" tools:ignore="MissingTranslation">خيارات أكثر</string>
+    <string name="export_stock_report">تصدير تقرير المخزون (CSV)</string>
+    <string name="export_stock_report_csv">تصدير تقرير المخزون بصيغة CSV</string>
 </resources>

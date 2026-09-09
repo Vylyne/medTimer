@@ -337,4 +337,6 @@
     <string name="next_week">அடுத்த வாரம்</string>
     <string name="stock_after_simulation_end">%s க்குப் பிறகு</string>
     <string name="move_medicine">மருந்தை நகர்த்து</string>
+    <string name="export_stock_report">இருப்பு அறிக்கையை ஏற்றுமதி செய் (CSV)</string>
+    <string name="export_stock_report_csv">இருப்பு அறிக்கையை CSV ஆக ஏற்றுமதி செய்</string>
 </resources>

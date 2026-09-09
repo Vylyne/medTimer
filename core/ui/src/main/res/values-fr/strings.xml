@@ -343,4 +343,6 @@
     <string name="next_week">Semaine suivante</string>
     <string name="stock_after_simulation_end">Après %s</string>
     <string name="move_medicine">Déplacer le médicament</string>
+    <string name="export_stock_report">Exporter le rapport de stock (CSV)</string>
+    <string name="export_stock_report_csv">Exporter le rapport de stock au format CSV</string>
 </resources>

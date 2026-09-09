@@ -340,4 +340,6 @@
     <string name="navigate_up" tools:ignore="MissingTranslation">Nach oben</string>
     <string name="close" tools:ignore="MissingTranslation">Schließen</string>
     <string name="more_options" tools:ignore="MissingTranslation">Mehr Optionen</string>
+    <string name="export_stock_report">Bestandsbericht exportieren (CSV)</string>
+    <string name="export_stock_report_csv">Bestandsbericht als CSV exportieren</string>
 </resources>

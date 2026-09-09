@@ -64,4 +64,6 @@
     <string name="export_events_csv">Eksporter hendelser som CSV</string>
     <string name="export_medicines_pdf">Eksporter legemidler som PDF</string>
     <string name="export_medicines_csv">Eksporter legemidler som CSV</string>
+    <string name="export_stock_report">Eksporter lagerrapport (CSV)</string>
+    <string name="export_stock_report_csv">Eksporter lagerrapport som CSV</string>
 </resources>
